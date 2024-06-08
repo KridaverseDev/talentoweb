@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Talentocraft App</title>
+
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="author" content="Talentocraft">
+	<meta name="generator" content="Talentocraft">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/slick/slick-theme.css">
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="plugins/aos/aos.css">
+
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+		.subscription {
+			padding: 80px 0;
+		}
+
+		.subscription h2 {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 40px;
+			color: #333;
+		}
+
+		.card {
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+		}
+
+		.card-header {
+			background-color: #007bff;
+			color: #fff;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding: 20px 0;
+		}
+
+		.card-title {
+			font-size: 28px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.card-text {
+			font-size: 18px;
+			color: #777;
+		}
+
+		.btn-subscribe {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 12px 24px;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+		}
+
+		.btn-subscribe:hover {
+			background-color: #0056b3;
+		}
+	</style>
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">TalentoCraft</a>
+
+
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="ti-menu"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Home
+						</a>
+
+					</li>
+					<li class="nav-item dropdown @@pages">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Info
+							<span><i class="ti-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+						<ul class="dropdown-menu">
+
+							<li><a class="dropdown-item @@privacy" href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a class="dropdown-item @@faq" href="FAQ.html">FAQ</a></li>
+							<li><a class="dropdown-item @@faq" href="terms.html">Terms & Conditions</a></li>
+							<li><a class="dropdown-item @@faq" href="cancel.html">Cancellation/Refund Policies</a></li>
+						</ul>
+					</li>
+					<li class="nav-item @@about">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item @@contact">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="section gradient-banner">
+		<div class="shapes-container">
+			<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+			<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+			<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+			<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+			<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+			<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+			<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+			<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+			<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
+			<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+			<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
+			<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
+			<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+			<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
+			<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
+			<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
+		</div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+					<h1 class="text-white font-weight-bold mb-4">Elevate Your Career with TalentoCraft</h1>
+					<p class="text-white mb-5">TalentoCraft offers a comprehensive platform for crafting exceptional
+						resumes, discovering job opportunities, and advancing your programming skills from beginner to
+						expert levels</p>
+					<button type="button" class="btn btn-main-md" data-toggle="modal" data-target="#comingSoonModal">
+						Get Started Today
+					</button>
+				</div>
+				<div class="col-md-6 text-center order-1 order-md-2">
+					<img class="img-fluid" src="images/iphone-mock.png" alt="TalentoCraft screenshot">
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	<!-- Modal -->
+	<div class="modal fade" id="comingSoonModal" tabindex="-1" role="dialog" aria-labelledby="comingSoonModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="comingSoonModalLabel">Coming Soon!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Our app is currently under development. Stay tuned for updates!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section pt-0 position-relative pull-top">
+		<div class="container">
+			<div class="rounded shadow p-5 bg-white">
+				<div class="row mt-5">
+					<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+						<i class="ti-blackboard text-primary h1"></i>
+						<h3 class="mt-4 text-capitalize h5 ">Resume: Building Using ATS Friendly</h3>
+						<!-- <p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+							non, recusandae tempore ipsam dignissimos molestias.</p> -->
+					</div>
+					<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+						<i class="ti-search text-primary h1"></i>
+						<h3 class="mt-4 text-capitalize h5 ">Job Listing: Getting List of Jobs</h3>
+						<!-- <p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+							non, recusandae tempore ipsam dignissimos molestias.</p> -->
+					</div>
+					<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+						<i class="ti-map text-primary h1"></i>
+						<h3 class="mt-4 text-capitalize h5 ">Road Map to Programming Concepts</h3>
+						<!-- <p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+							non, recusandae tempore ipsam dignissimos molestias.</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section class="service section bg-gray">
+		<div class="container-fluid p-0">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>An Interface For Career Growth</h2>
+						<p>Talentocraft empowers students to excel in their career journey. From crafting ATS-friendly
+							resumes using AI to providing a roadmap to programming concepts and listing job
+							opportunities, Talentocraft is your gateway to success.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutters">
+
+				<div class="col-lg-5 mx-auto align-self-center">
+					<div class="service-box">
+						<div class="row align-items-center">
+							<div class="col-md-6 col-xs-12">
+								<!-- Service 01 -->
+								<div class="service-item">
+									<!-- Icon -->
+									<i class="ti-bookmark"></i>
+									<!-- Heading -->
+									<h3>Resume Building</h3>
+									<!-- Description -->
+									<p>Talentocraft utilizes AI to assist students in creating ATS-friendly resumes,
+										ensuring their applications stand out to employers.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-12">
+								<!-- Service 01 -->
+								<div class="service-item">
+									<!-- Icon -->
+									<i class="ti-pulse"></i>
+									<!-- Heading -->
+									<h3>Roadmap to Programming</h3>
+									<!-- Description -->
+									<p>Talentocraft provides a structured roadmap to mastering programming concepts,
+										guiding students through their learning journey.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-12">
+								<!-- Service 01 -->
+								<div class="service-item">
+									<!-- Icon -->
+									<i class="ti-bar-chart"></i>
+									<!-- Heading -->
+									<h3>Job Listings</h3>
+									<!-- Description -->
+									<p>Stay updated with the latest job opportunities relevant to your skills and
+										interests, curated by Talentocraft.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-12">
+								<div class="service-item">
+									<!-- Icon -->
+									<i class="ti-panel"></i>
+									<!-- Heading -->
+									<h3>Career Guidance</h3>
+									<!-- Description -->
+									<p>Receive personalized career guidance and advice from industry experts to help you
+										navigate your professional journey.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="subscription section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center mb-4">Subscription Plans</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<!-- Pricing Card - Option 1 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="card text-center mb-4">
+						<div class="card-header">
+							<h3 class="font-weight-bold">3 Resumes</h3>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">₹XX/-</h4>
+							<p class="card-text">Unlimited Templates & Job Listings</p>
+							<a href="#" class="btn btn-subscribe">Subscribe Now</a>
+						</div>
+					</div>
+				</div>
+				<!-- Pricing Card - Option 2 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="card text-center mb-4">
+						<div class="card-header">
+							<h3 class="font-weight-bold">5 Resumes</h3>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">₹XX/-</h4>
+							<p class="card-text">Unlimited Templates & Job Listings</p>
+							<a href="#" class="btn btn-subscribe">Subscribe Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="video-promo section bg-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="content-block text-center">
+						<!-- Heading -->
+						<h2>Discover Talentocraft</h2>
+						<!-- Promotional Speech -->
+						<p>Explore the features and benefits of Talentocraft, your gateway to career success. Whether
+							it's crafting ATS-friendly resumes, mastering programming concepts, or finding the perfect
+							job, Talentocraft has you covered.</p>
+						<!-- Popup Video -->
+						<a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
+							<i class="ti-control-play video"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="call-to-action-app section bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Exciting Announcement Coming Soon!</h2>
+					<p>Stay tuned for the launch of our revolutionary app on Android and the App Store. Get ready to
+						experience a whole new level of convenience and productivity.</p>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-rounded-icon">
+								<i class="ti-android"></i>
+								Android
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-rounded-icon">
+								<i class="ti-apple"></i>
+								App Store
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- To Top -->
+	<div class="scroll-top-to">
+		<i class="ti-angle-up"></i>
+	</div>
+
+	<!-- JAVASCRIPTS -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+	<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="plugins/aos/aos.js"></script>
+	<!-- google map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="plugins/google-map/gmap.js"></script>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
